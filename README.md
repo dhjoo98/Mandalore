@@ -8,6 +8,7 @@ For now, Sanger and Wanda are implemented.
 export PROJ_ROOT as current directory before any code run.  
 sh ./scripts/train_sanger_on_squad.sh for Sanger training. 
 sh ./scripts/eval_sanger_on_squad.sh for for Sanger evaluation.(same for Wanda)  
+"python inference.py --prune_method sanger/wanda" for infernce" 
 
 if there is an issue with AttributeError: module 'distutils' has no attribute 'version', try 'conda/pip install setuptools==59.5.0'  
 (useful post: https://sebhastian.com/python-attributeerror-module-distutils-has-no-attribute-version/)  

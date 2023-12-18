@@ -6,7 +6,7 @@ import argparse
 import os
 
 PROJ_ROOT = os.environ.get('PROJ_ROOT')
-CONFIG_ROOT=PROJ_ROOT+"/configs" #do remember to export PROJ_ROOT environment variable! 
+CONFIG_ROOT=PROJ_ROOT+"/model/configs" #do remember to export PROJ_ROOT environment variable! 
 
 from transformers import (
     AutoConfig,

@@ -64,11 +64,16 @@ try:
     from model.modeling_static_spattn import build_static_sparsity_mask, apply_static_sparsity_mask
     from model.modeling_sanger_spattn import gen_sparsity_mask, quant_qk_matmul, prune_attn_scores
     from model.quant_utils import build_quant_matmul
+except ImportError:
+    pass
+
+try:
     from modeling_static_spattn import build_static_sparsity_mask, apply_static_sparsity_mask
     from modeling_sanger_spattn import gen_sparsity_mask, quant_qk_matmul, prune_attn_scores
     from quant_utils import build_quant_matmul
 except ImportError:
     pass
+
 
 
 logger = logging.get_logger(__name__)
